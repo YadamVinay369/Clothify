@@ -1,8 +1,8 @@
-# Clothify
+# Marime
 Marvel / Anime-Inspired Wardrobe Store
-WebSite Link: https://marime-madebyvinay.netlify.app/
+Deployed Website Link: https://marime-madebyvinay.netlify.app/
 
-Clothify is a beginner-level website With Static Pages and pretty good animations.
+Marime (Marvel-Anime-inspired Wardrobe Store ) is a beginner-level website With Static Pages and pretty good animations and of course responsive.
 
 Tools and Languages Used:
 HTML, CSS, JavaScript, VS Code
