@@ -37,7 +37,6 @@ h6 {
 
 p {
   font-size: 16px;
-  color: #465b52;
   margin: 15px 0 20px 0;
 }
 
@@ -76,7 +75,9 @@ button.white{
 
 body {
   width: 100%;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  /* background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; */
+    /* background-color: #F0ECE5; */
+    background-color: #FAF6F0;
 }
 
 #header{
@@ -85,7 +86,8 @@ body {
     justify-content: space-between;
     padding: 20px 80px;
     /* background-color: #E3E6F3; */
-    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    /* background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%); */
+    background-color: #000;
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
     z-index: 999;
     position: sticky;
@@ -93,12 +95,15 @@ body {
     left: 0;
 }
 
+#header p{
+    color: #faf6f0;
+}
+
 #navbar{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 #navbar li{
     list-style: none;
@@ -109,7 +114,7 @@ body {
 #navbar li a{
     text-decoration: none;
     /* color: #1a1a1a; */
-    color: #ffee58;
+    color: #FAF6F0;
     font-size: 16px;
     font-weight: 600;
     transition: 0.3s ease;
@@ -117,8 +122,7 @@ body {
 }
 
 #navbar li a:hover,#navbar li a.active{
-    color: #ffbd27;
-    font-size: larger;
+    font-size: x-large;
 }
 
 #navbar li a.active{
@@ -152,8 +156,8 @@ body {
 }
 
 #hero{
-    /* background-image: url("img/hero4.png"); */
-    background-image: url("images/spiderman.jpg");
+    /* background-image: url("images/spiderman.jpg"); */
+    background-image: url("images/hero.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -163,44 +167,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-}
-
-#hero h4{
-    padding-bottom: 15px;
-    color: #ffee58;
-}
-
-#hero h1{
-    /* color: #088178; */
-    color: #cda41d;
-}
-
-#hero h2{
-    color: #ffee58;
-}
-
-#hero button{
-    /* background-image: url("img/button.png"); */
-    background-color:#cda41d;
-    /* color: #088178; */
-    color: #000;
-    border: 0;
-    /* padding: 14px 80px 14px 65px; */
-    padding: 14px 40px 14px 40px;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 15px;
-}
-
-#hero button:hover{
-    border: 1px solid #ffee58;
-    background: transparent;
-    color: #ffee58;
-}
-
-#hero p{
-    color: #ffee58;
 }
 
 #feature{
@@ -224,8 +190,7 @@ body {
 }
 
 #feature .fe-box:hover{
-    /* box-shadow: 10px 10px 54px rgba(70,62,221,0.1); */
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 #feature .fe-box img{
@@ -268,7 +233,8 @@ body {
     margin: 15px 0 ;
     transition: 0.2s ease;
     position: relative;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: #fffdf9;
     transition: 0.2s ease ;
 }
 
@@ -320,7 +286,7 @@ body {
     background-color: #000;
     font-weight: 500;
     /* color: #088178; */
-    color: #ffee58;
+    color: #faf6f0;
     border: 1px solid  rgba(0,0,0,0.15);
     position:absolute;
     bottom: 20px;
@@ -359,7 +325,7 @@ body {
 }
 
 #banner button:hover{
-    background-color: #ffee58;
+    background-color: #faf6f0;
     color: #000;
 }
 
@@ -440,7 +406,7 @@ body {
 }
 
 #banner3 h3{
-    color: #ec544e;
+    color: #000;
     font-weight: 800;
     font-size: 15px;
 }
@@ -461,7 +427,7 @@ body {
     background-image: url("images/banner/b14.jpg");
     background-repeat: no-repeat;
     background-position: 20% 30%;
-    background-color: #041e42;
+    background-color: #000;
 }
 
 #newsletter h4{
@@ -477,7 +443,7 @@ body {
 }
 
 #newsletter p span{
-    color: #ffbd27;
+    color: #ffefd8;
 }
 
 #newsletter input{
@@ -493,11 +459,12 @@ body {
 }
 
 #newsletter button{
-    background-color: #ffbd27;
+    background-color: #ffefd8;
     color: #000;
     white-space: nowrap;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0 ;
+
 }
 
 #newsletter .form{
@@ -527,6 +494,7 @@ footer .col{
 
 footer .logo{
     margin-bottom: 30px;
+    margin-top: -60px;
 }
 
 footer h4{
@@ -537,7 +505,7 @@ footer h4{
 footer p{
     font-size: 13px;
     margin: 0 0 8px 0;
-    color: #ffee58;
+    color: #000;
 }
 
 footer p strong{
@@ -562,7 +530,7 @@ footer .follow i{
 }
 
 footer .install .row img{
-    border: 1px solid #fff;
+    border: 1px solid #000;
     border-radius: 6px;
 }
 
@@ -572,7 +540,7 @@ footer .install img{
 
 footer .follow .icon i:hover,
 footer a:hover{
-    color: #ffee58;
+    color: #ffe19b;
 
 }
 
@@ -610,7 +578,7 @@ footer .copyright{
     background-color: #000;
     padding: 15px 20px;
     border-radius: 4px;
-    color: #ffee58;
+    color: #faf6f0;
     font-weight: 600;
 }
 
@@ -753,22 +721,8 @@ footer .copyright{
     transition: 0.3s;
 }
 
-#blog .blog-details a::after{
-    content: "";
-    width: 50px;
-    height: 1px;
-    background-color: black;
-    position: absolute;
-    top: 4px;
-    right: -60px;
-}
-
 #blog .blog-details a:hover{
-    color: #ffee58;
-}
-
-#blog .blog-details a:hover::after{
-    background-color: #ffee58;
+    font-size: 12px;
 }
 
 #blog .blog-box h1{
@@ -807,7 +761,8 @@ footer .copyright{
 }
 
 #about-app a{
-    color: #ffee58;
+    color: #ffce86;
+
 }
 
 
@@ -884,7 +839,7 @@ footer .copyright{
     justify-content: space-between;
     margin: 30px;
     padding: 80px 100px 80px 80px;
-    border: 1px solid #e1e1e1;
+    border: 1px solid #000;
 }
 
 #form-details form{
@@ -906,11 +861,11 @@ align-items: flex-start;
 
 #form-details form button{
     background-color: #000;
-    color: #ffee58;
+    color: #faf6f0;
 }
 
 #form-details form input:hover,#form-details form textarea:hover{
-    border: 2px solid #ffee58;
+    border: 2px solid #000;
 }
 
 
@@ -982,11 +937,11 @@ align-items: flex-start;
 #cart table td:nth-child(5) input{
     width: 70px;
     padding: 10px 5px 10px 15px;
-    outline-color: #ffee58;
+    outline-color: #000;
 }
 
 #cart table thead{
-    border: 1px solid #e2e9e1;
+    border: 1px solid #000;
     border-left: none;
     border-right: none;
 }
@@ -1003,7 +958,7 @@ align-items: flex-start;
 }
 
 #cart table tbody tr td i{
-    color: red;
+    color: #000;
 }
 
 #cart table tbody tr td img{
@@ -1035,27 +990,31 @@ align-items: flex-start;
     outline: none;
     width: 60%;
     margin-right: 10px;
-    border: 1px solid #e2e9e1;
+    border: none;
+}
+
+#coupon input:hover{
+    border: 1px solid #000;
 }
 
 
 
 #coupon button,#subtotal button{
-    background-color: #ffee58;
-    color: #000;
+    background-color: #000;
+    color: #faf6f0;
     padding: 10px 20px;
 }
 
-#coupon input:hover,#coupon button:hover,#subtotal button:hover{
-    background-color: #000;
-    color: #ffee58;
-    border: 1px solid #ffee58;
+#coupon button:hover,#subtotal button:hover{
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
 }
 
 #subtotal{
     width: 50%;
     margin-bottom: 30px;
-    border: 1px solid #e2e9e1;
+    border: 1px solid #000;
     padding: 30px;
 }
 
@@ -1067,7 +1026,7 @@ align-items: flex-start;
 
 #subtotal table td{
     width: 50%;
-    border: 1px solid #e2e9e1;
+    border: 1px solid #000;
     padding: 10px;
     font-size: 13px;
 }
@@ -1093,7 +1052,7 @@ align-items: flex-start;
         height: 100vh;
         width: 300px;
         right: -300px;
-        background-color: #908787;
+        background-color: #F4EAE0;
         box-shadow: 0 40px 60px rgba(0,0,0,0.1) ;
         padding: 80px 0 0 10px;
         transition: 0.3s;
@@ -1103,13 +1062,17 @@ align-items: flex-start;
         margin-bottom: 25px;
     }
 
+    #navbar li a{
+        color: #000;
+    }
+
     #mobile{
         display: flex;
         align-items: center; 
     }
 
     #mobile i{
-        color: #ffee58;
+        color: #faf6f0;
         font-size: 24px;
         padding-left: 40px ;
     }
@@ -1119,7 +1082,7 @@ align-items: flex-start;
         position: absolute;
         top: 30px;
         left: 30px;
-        color: #ffee58;
+        color: #000;
         font-size: 24px;
     }
 
